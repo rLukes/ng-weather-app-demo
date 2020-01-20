@@ -1,3 +1,14 @@
-<h3>App</h3>
-
-<app-current-weather></app-current-weather>
+<div>
+  <mat-toolbar color="primary">
+    <span>LocalCast weather</span>
+  </mat-toolbar>
+  <div fxLayout="row">
+    <div fxFlex></div>
+    <div fxFlex="350px">
+      <mat-card>
+        <app-current-weather></app-current-weather>
+      </mat-card>
+    </div>
+    <div fxFlex></div>
+  </div>
+</div>
