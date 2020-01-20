@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 
 interface ICurrentWeatherData {
   weathter: [
@@ -17,7 +18,7 @@ interface ICurrentWeatherData {
   name: string;
 }
 
-@Injectable({
-  providedIn: "root"
-})
-export class WeatherService {}
+@Injectable()
+export class WeatherService {
+  constructor(private http: HttpClient) {}
+}
